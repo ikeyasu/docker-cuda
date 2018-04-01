@@ -1,5 +1,6 @@
-FROM ubuntu:17.04
-LABEL maintainer "NVIDIA CORPORATION <cudatools@nvidia.com>"
+FROM ubuntu:17.10
+#LABEL maintainer "NVIDIA CORPORATION <cudatools@nvidia.com>"
+LABEL maintainer "ikeyasu <ikeyasu@gmail.com>"
 
 RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certificates && \
     curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1704/x86_64/7fa2af80.pub | apt-key add - && \

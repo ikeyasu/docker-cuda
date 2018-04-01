@@ -1,6 +1,7 @@
 ARG repository
-FROM ${repository}:9.0-runtime-ubuntu17.04
-LABEL maintainer "NVIDIA CORPORATION <cudatools@nvidia.com>"
+FROM ${repository}:9.0-runtime-ubuntu17.10
+#LABEL maintainer "NVIDIA CORPORATION <cudatools@nvidia.com>"
+LABEL maintainer "ikeyasu <ikeyasu@gmail.com>"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         cuda-libraries-dev-$CUDA_PKG_VERSION \
